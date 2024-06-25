@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper { 
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 410s ease infinite;
+  -z-animation: rainbow 440s ease infinite;
+  -o-animation: rainbow 440s ease infinite;
+  animation: rainbow 440s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@-webkit-keyframes rainbow {
+    0% {background-position: 0% 82%;}
+    50% {background-position: 100% 19%;}
+    100% {background-position: 0% 82%;}
+}
+@-moz-keyframes rainbow {
+    0% {background-position: 0% 82%;}
+    50% {background-position: 100% 19%;}
+    100% {background-position: 0% 82%;}
+}
+@-o-keyframes rainbow {
+    0% {background-position: 0% 82%;}
+    50% {background-position: 100% 19%;}
+    100% {background-position: 0% 82%;}
+}
+@keyframes rainbow { 
+    0% {background-position: 0% 82%;}
+    50% {background-position: 100% 19%;}
+    100% {background-position: 0% 82%;}
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    max-height: 80vh;
+    overflow: auto;
+    margin: 0 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#counter, #onscreen {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: bold;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.card {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 1s ease, transform 1s ease;
+    cursor: pointer;
+    color: #000;
+}
+
+.card.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card.hide {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.card p {
+    font-weight: bold;
+}
+
+.floating-names {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.floating-name {
+    position: absolute;
+    font-size: 40px;
+    font-family: monospace;
+    color: rgba(255, 255, 255, 0.5);
+    animation: float 10s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(-20px) translateX(20px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}

@@ -1,0 +1,17 @@
+[
+    { "name": "Books", "frequency": 10, "background": "#00d4ff", "color": "#ffffff" },
+    { "name": "Music", "frequency": 6, "background": "#5454eb", "color": "#ffffff" },
+    { "name": "Dropbox", "frequency": 16, "background": "#009de8", "color": "#ffffff" },
+    { "name": "Youtube", "frequency": 60, "background": "#ff0d0d", "color": "#ffffff" },
+    { "name": "Brilliant", "frequency": 31, "background": "#000000", "color": "#ffffff" },
+    { "name": "DK", "frequency": 6, "background": "#c90000", "color": "#ffffff" },
+    { "name": "4Books", "frequency": 8, "background": "#004bc9", "color": "#ffffff" },
+    { "name": "Audible", "frequency": 7, "background": "#ffbc00", "color": "#ffffff" },
+    { "name": "Telegram", "frequency": 8, "background": "#00caff", "color": "#ffffff" },
+    { "name": "Akadermica", "frequency": 24, "background": "#b1b1b1", "color": "#ffffff" },
+    { "name": "Spotify", "frequency": 18, "background": "#00bb22", "color": "#ffffff" },
+    { "name": "RaiPlay", "frequency": 4, "background": "#005cbb", "color": "#ffffff" },
+    { "name": "Movie", "frequency": 5, "background": "#8b0700", "color": "#ffffff" },
+    { "name": "Travel", "frequency": 4, "background": "#8b0000", "color": "#ffffff" },
+    { "name": "Fallace", "frequency": 31, "background": "#ff7272", "color": "#ffffff" }
+]
